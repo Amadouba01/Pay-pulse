@@ -1,0 +1,185 @@
+/* #testimonial {
+    padding: 112px 24px;
+} */
+
+/* #testimonial{
+    margin-left: 160px;
+    padding: 112px 0;
+    
+} */
+
+#testimonial .container{
+    margin-right: 0;
+    padding: 0;
+}
+
+#testimonial .testimonial .section_title{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 72px;
+    padding-right: 40px;
+}
+
+#testimonial .testimonial .section_title .title h2{
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+}
+#testimonial .testimonial .section_title .subtitle p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#testimonial .testimonial .card-container {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(12 , 1fr);
+}
+
+#testimonial .testimonial .card-container .card_col.review {
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonial .testimonial .card-container .card_col.pict {
+    grid-column-end: span 6 ;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#testimonial .testimonial .card-container .card_col.pict img{
+    align-items: flex-end;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#testimonial .testimonial .card-container .card_col.review .text_rev h3{
+    font-size: 40px;
+    font-weight: 700;
+  
+}
+
+#testimonial .testimonial .card-container .card_col.review .perso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+#testimonial .testimonial .card-container .card_col.review .perso .perso_name h6{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#testimonial .testimonial .card-container .card_col.review .perso .perso_role p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#testimonial .testimonial .card-container .card_col.review .slider {
+    display: flex;
+}
+/* 
+@media (max-width: 426px) {
+    mobile
+
+    .benefits .section_Title {
+        margin-bottom: 55px;
+
+    }
+
+    .benefits .section_Title h1 {
+        font-size: 40px;
+    }
+} */
+
+
+@media (max-width: 768px) {
+    /* tablet */
+   
+    #testimonial .testimonial .section_title .title h2{
+        font-size: 40px;
+    }
+    #testimonial .testimonial .card-container .card_col.review .text_rev h3{
+        font-size: 30px;
+    }
+    #testimonial .testimonial .card-container{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    #testimonial .testimonial .card-container .card_col {
+        grid-template-rows: auto auto;
+    }
+
+    #testimonial .testimonial .card-container .card_col.review{
+        grid-row-start: 1;
+        grid-column: 1 /    span 12;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    #testimonial .testimonial .card-container .card_col.review.text_rev{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }
+    #testimonial .testimonial .card-container .card_col.pict{
+        /* position: relative; */
+        grid-row-start: 2;
+        grid-column: 1 /    span 12;
+        display: flex;
+        /* justify-content: flex-end; */
+        padding-top: 15px   ;
+        
+    }
+    #testimonial .testimonial .card-container .card_col.pict img{
+        max-width: 100%;
+        height: auto;
+        display: block;    }
+    #testimonial{
+        margin-left: 0;
+        padding: 80px 0;
+        
+    }
+    #testimonial .testimonial .section_title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 10px;
+    }
+    
+}
+
+
+
+/* 
+@media (max-width: 1024px) {
+    laptop
+    #benefits .benefits .card-container .card_item.Clouddrive  {
+        grid-column: 2 / span 5;
+        
+    }
+    #benefits .benefits .card-container .card_item.PaymentOverview  {
+        grid-column: 7 / span 5;
+        
+    }
+    #benefits .benefits .card-container .card_item.ExpertiseBuilt  {
+        grid-column: 2 / span 5;
+        
+    }
+    #benefits .benefits .card-container .card_item.ConvenientEasy  {
+        grid-column: 7 / span 5;
+        
+ }   } */
+
+
+  

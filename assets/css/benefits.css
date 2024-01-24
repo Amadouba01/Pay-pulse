@@ -1,0 +1,106 @@
+#benefits {
+    background-color: #F4F5FF;
+    padding: 40px 0px;
+
+}
+
+#benefits .benefits .section_Title {
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+
+
+.benefits .section_Title h1 {
+    font-size: 56px;
+
+}
+
+.benefits .section_Title h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+
+}
+
+#benefits .benefits .card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+#benefits .benefits .card-container .card_item {
+    grid-column-end: span 3;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: white;
+
+}
+
+#benefits .benefits .card-container .card_item h3{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#benefits .benefits .card-container .card_item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0;
+    color: var(--primary-color);
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 14px;
+
+}
+
+
+
+/* Responsivite */
+
+@media (max-width: 426px) {
+    /* mobile */
+    .benefits .section_Title {
+        margin-bottom: 55px;
+
+    }
+
+    .benefits .section_Title h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* tablet */
+    #benefits .benefits .card-container .card_item  {
+        grid-column-start: 1 !important;
+        grid-column-end: span 12 !important;
+        
+    }
+}
+
+
+@media (max-width: 1024px) {
+    /* laptop */
+    #benefits .benefits .card-container .card_item.Clouddrive  {
+        grid-column: 2 / span 5;
+        
+    }
+    #benefits .benefits .card-container .card_item.PaymentOverview  {
+        grid-column: 7 / span 5;
+        
+    }
+    #benefits .benefits .card-container .card_item.ExpertiseBuilt  {
+        grid-column: 2 / span 5;
+        
+    }
+    #benefits .benefits .card-container .card_item.ConvenientEasy  {
+        grid-column: 7 / span 5;
+        
+    }
+}
+

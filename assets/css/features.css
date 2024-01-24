@@ -1,0 +1,225 @@
+#features {
+
+    padding: 30px 0;
+
+}
+
+.features .card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.features .card-container .card_item.one {
+    grid-column: 2 / span 5;
+    grid-row-start: 1;
+    /* background-color: var(--primary-color);
+    color: #DCDFFF; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: -25px;
+    margin-left: 15px;
+
+}
+.features .card-container .card_item.one .logo_one{
+    display: flex;
+    justify-content: center;
+
+}
+
+.features .card-container .card_item .logo_two h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.features .card-container .card_item.one .cardcol1 {
+    background-color: var(--primary-color);
+    color: #DCDFFF;
+    padding: 48px 56px;
+}
+
+/* .features .card-container .card_item.one .logo_one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+} */
+
+.features .card-container .card_item.one .cardcol1 .check_logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.features .card-container .card_item.one .cardcol1 .check_logo p {
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.features .card-container .card_item.one .cardcol1 h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 25px;
+
+}
+
+.features .card-container .card_item.vs {
+    grid-column: 7 / span 1;
+    grid-row-start: 1;
+    position: absolute;
+    top: 50%;
+}
+
+.features .card-container .card_item.two {
+    grid-column: 8 / span 5;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -35px;
+    margin-right: 35px;
+    /* background: red; */
+
+}
+/* .features .card-container .card_item.two .logo_two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+} */
+
+
+.features .card-container .card_item.two {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    /* margin-right: -15px;
+    margin-left: 15px; */
+}
+
+.features .card-container .card_item.two .check_logored {
+    display: flex;
+    gap: 16px; ;
+    align-items: center;
+    margin: 0;
+
+}
+
+.features .card-container .card_item.two .cardcol2 {
+    background-color: white;
+    color: #1D1E25;
+    padding: 48px 56px;
+    padding-top: 0px;
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.07);
+}
+
+.features .card-container .card_item.two .cardcol2 h5 {
+    font-size: 24px;
+
+}
+
+.features .card-container .card_item.two h4 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+    text-align: center;
+}
+
+.features .card-container .card_item.two .cardcol2 p{
+
+    font-size: 16px;
+    font-weight: 400;   
+
+}
+
+
+/* .features .card-container .card_item.two .logo2{
+    display: flex;
+    justify-content: center;
+} */
+
+.features .section_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.features .section_title h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 0;
+
+}
+
+.features .section_title p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+/* .features .col{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    grid-column-end: span 6;
+}
+
+
+.features .col .col1{
+    background-color: var(--primary-color);
+    color: #DCDFFF;
+}
+
+.features .col .col2{
+    background-color: white;
+    color: #454C5D;
+} */
+
+
+
+
+
+/* mobile */
+  @media (max-width: 768px) {
+
+    .features .card-container .card_item.two {
+        margin: 0;
+    }
+    
+    .features .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .card-container .card_item.vs {
+     
+        position: relative;
+    }
+
+    .features .card-container .card_item.one {
+
+    margin: 0;
+    margin-bottom: -20px;
+    }
+
+    .features .card-container .card_item .cardcol2{
+     
+        position: relative;
+    }
+    
+}
+
+
+  

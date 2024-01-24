@@ -1,0 +1,35 @@
+@import "./partials/common.css";
+@import "./benefits.css";
+@import "./about.css";
+@import "./features.css";
+@import "./cta.css";
+@import "./testimonial.css";
+@import"./faq.css";
+@import"./blog.css";
+@import"./banner.css";
+@import"./footer.css";
+@import"./footercta.css";
+* {
+    font-family: "Urbanist", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color:#4759F9;
+    --second-color: #454C5D;
+    --color-grey-2: #F4F5FF;
+    --Color-Accent-2: #FEAE37;
+    --Color-Grey: #DCDFFF;
+    --Color-Text-1: #1D1E25;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

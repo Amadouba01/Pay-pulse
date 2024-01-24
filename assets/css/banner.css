@@ -1,0 +1,161 @@
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--Color-Grey, #DCDFFF);
+}
+#banner {
+    background: url("../../assets/images/background-mesh-gradient.png");
+    background-size: cover;
+}
+
+header .container {
+    padding-bottom: 0;
+    padding-top: 0;
+
+}
+header .navbar .logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+header .navbar .menu{
+        display: flex;
+        align-items: center;
+        /* justify-content: flex-end ; */
+        gap: 45px;
+}
+
+header .navbar .menu a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Color-Text-1);
+}
+header .navbar .menuv2{
+    display: none;
+}
+header .navbar .menu .downloadbutton{
+    padding: 10px 20px;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+header .navbar .menu .downloadbutton a{
+    color: white;
+}
+
+#banner .banner .card-container .card_item .tagline{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#banner .banner{
+    margin-bottom: -150px;
+
+}
+
+
+#banner .banner .card-container .card_item .tagline .tag p{
+    padding: 4px 8px;
+    background: var(--Color-Accent-2);
+    border-radius: 10px;
+}
+#banner .banner .card-container .card_item .headline h1{
+    font-size: 64px;
+    font-weight: 800;
+    margin: 0;
+}
+#banner .banner .card-container .card_item .description {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 56px 0;
+}
+#banner .banner .card-container .card_item .badges{
+    display: flex;
+    gap: 24px;
+
+}
+#banner .banner .card-container .card_item .badges img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#banner .banner .card-container .card_item .headline .a1{
+    color: var(--primary-color);
+}
+
+#banner .banner .card-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#banner .banner .card-container .card_item{
+  grid-column-end: span 6;  
+  display: flex;
+  flex-direction: column;
+
+}
+
+#banner .banner .card-container .card_item.one .tagline .tag p{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+#banner .banner .card-container .card_item.one .tagline .tagline-text p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#banner .banner .card-container .card_item.two{
+    grid-column: 8 / span 5;
+
+}
+#banner .banner .card-container .card_item.two img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* tablet */
+
+    #banner .banner .card-container .card_item .headline h1{
+        font-size: 44px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+header .navbar .menu{
+    display: none;
+}
+header .navbar .menuv2{
+    display: flex;
+    align-items: center;
+}
+
+#banner .banner .card-container .card_item{
+    grid-template-rows: auto auto;
+  
+  }
+  #banner .banner .card-container .card_item .badges{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+#banner .banner .card-container .card_item.one{
+    grid-column: 1 / span 12 !important;
+        grid-row-start: 1;
+}
+#banner .banner .card-container .card_item.two{
+    grid-column: 1 / span 12 !important;
+        grid-row-start: 2;
+}
+
+
+}

@@ -1,0 +1,123 @@
+#footer {
+    background: var(--primary-color);
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+
+#footer .footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 40px;
+    justify-content: center;
+}
+
+#footer .footer .logo {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#footer .footer .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    gap: 40px;
+}
+
+#footer .footer .menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+#footer .footer .footercopyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    border-top: 2px solid #FFFFFF0D;
+    padding-top: 15px;
+}
+
+#footer .footer .footercopyright .copyright {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+}
+
+#footer .footer .footercopyright .links a {
+    /* display: ; */
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#footer .footer .footercopyright .socialmedia {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+#footer .footer .footercopyright .socialmedia .facebook {
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer .footercopyright .socialmedia .instagram {
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer .footercopyright .socialmedia .twitter {
+    border-radius: 48px;
+    background: white;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+    /* tablet */
+
+    #footer .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer .footer .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #footer .footer .footercopyright {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
